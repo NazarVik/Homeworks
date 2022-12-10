@@ -3,7 +3,8 @@
 // 0, 7, 8, -2, -2 -> 2
 // 1, -7, 567, 89, 223-> 3
 
-string[] DataEntry() {
+string[] DataEntry() 
+{
     System.Console.Write("введите числa = ");
     string[] arr = Console.ReadLine().Split(",");
     return arr;
