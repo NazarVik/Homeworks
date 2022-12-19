@@ -7,12 +7,12 @@
 // 27(0,0,1) 90(0,1,1)
 // 26(1,0,1) 55(1,1,1)
 
-int DataEntry(string str)
-{
-    Console.Write(str);
-    int num = int.Parse(Console.ReadLine());
-    return num;
-}
+// int DataEntry(string str)
+// {
+//     Console.Write(str);
+//     int num = int.Parse(Console.ReadLine());
+//     return num;
+// }
 
 // int NewRandom(int[,,] arr)
 // {
