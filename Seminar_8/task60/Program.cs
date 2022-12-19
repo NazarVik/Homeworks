@@ -14,28 +14,29 @@ int DataEntry(string str)
     return num;
 }
 
-int NewRandom(int[,,] arr)
-{
-    Random rand = new Random();
-    int randomNumber = rand.Next(50, 100);
+// int NewRandom(int[,,] arr)
+// {
+//     Random rand = new Random();
+//     int randomNumber = rand.Next(50, 100);
 
-    foreach (int item in arr)
-    {
-        if (randomNumber == item) randomNumber = rand.Next(10,50);
-    }
-    return randomNumber;
-}
+//     foreach (int item in arr)
+//     {
+//         if (randomNumber == item) randomNumber = rand.Next(10,50);
+//     }
+//     return randomNumber;
+// }
 
 int[,,] FillArray(int[,,] arr)
-{
+{   
+    int count = 10;
     for (int i = 0; i < arr.GetLength(0); i++)
     {
         for (int j = 0; j < arr.GetLength(1); j++)
         {
             for (int k = 0; k < arr.GetLength(2); k++)
             {
-                
-                arr[i, j, k] = NewRandom(arr);
+                arr[i, j, k] = count ;
+                count += 5;
             }
         }
     }
@@ -59,10 +60,10 @@ void ShowArray(int[,,] arr)
 }
 
 Console.Clear();
-int x = DataEntry("введите размерность трехмерной матрицы x = ");
-int y = DataEntry("введите размерность трехмерной матрицы y = ");
-int z = DataEntry("введите размерность трехмерной матрицы z = ");
-int[,,] matrix = new int[x, y, z];
+// int x = DataEntry("введите размерность трехмерной матрицы x = ");
+// int y = DataEntry("введите размерность трехмерной матрицы y = ");
+// int z = DataEntry("введите размерность трехмерной матрицы z = ");
+int[,,] matrix = new int[2, 2, 2];
 matrix = FillArray(matrix);
 ShowArray(matrix);
 System.Console.WriteLine();
