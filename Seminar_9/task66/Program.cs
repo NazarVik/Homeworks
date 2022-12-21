@@ -16,8 +16,8 @@ int CalculateSum(int leftNum, int rightNum)
 }
 
 Console.Clear();
-int leftRangeNunber = DataEntry("введите натуральное число m = ");
-int rightRangeNunber = DataEntry("введите натуральное число n = ");
-int resultSum  = CalculateSum(leftRangeNunber, rightRangeNunber);
-Console.WriteLine($"сумму натуральных элементов в промежутке от {leftRangeNunber} до {rightRangeNunber} = " + resultSum);
+int leftRangeNumber = DataEntry("введите натуральное число m = ");
+int rightRangeNumber = DataEntry("введите натуральное число n = ");
+int resultSum  = CalculateSum(leftRangeNumber, rightRangeNumber);
+Console.WriteLine($"сумму натуральных элементов в промежутке от {leftRangeNumber} до {rightRangeNumber} = {resultSum}");
 
